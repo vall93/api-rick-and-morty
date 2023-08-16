@@ -1,0 +1,97 @@
+.logo {
+    padding: 0 25px;
+    font-family: 'Trebuchet MS'; /* cambia la letra*/
+    font-weight: bold; /* Hace que el texto esté en negrita */
+    font-size: 2.2em; /* Cambia el tamaño de la fuente */
+  }
+  
+  .color{
+    background-color: lightseagreen; /* Le doy color a mi encabezado  */
+  }
+  
+  .card-image:hover img {  /*Le doy efecto a mis tarjetas*/
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+  } 
+  
+  .card:hover { /* Le agrego color y sombra a la tarjeta ver mas*/
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+    background-color: lightseagreen;
+  }  
+  
+  .card-content { /* Le agrego color al contenido de mi tarjeta */
+    height: 29vh;
+    color: black;
+    background-color: lightseagreen;
+  }
+  
+  /* paginacion */
+  /* Le doy margen y centro los botones de las paginas > <<*/
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  /* Le agrego altura, tamaño y lo centro al boton del paginado*/
+  .pagination-button {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+  }
+  /* Le agrega color a los botones que desabilitamos para ultima y primera pagina */
+  .pagination-button:disabled {
+    color: gainsboro;
+    border-color: gainsboro;
+  }
+  
+  .container-paginador { /* Centramos el total pagina y pagina actual*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container{
+    text-align: center;
+  }
+  
+/* Estilos del pie de pagina*/
+footer {
+  background-color: lightseagreen;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.footer-links li {
+  margin-right: 20px;
+}
+
+.footer-links li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+
+.footer-links li a:hover {
+  color: black;
+}

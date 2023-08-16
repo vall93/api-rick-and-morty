@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link
+      rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css" />
+    <title>Rick and Morty</title>
+  </head>
+  <body>
+    <!--  encabezado de la pagina-->
+    <nav>
+      <div class="nav-wrapper color">
+        <a href="/" class="logo">Rick And Morty</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li id="todos"><a>Todos</a></li>
+          <li id="mujeres"><a>Mujeres</a></li>
+          <li id="hombres"><a>Hombres</a></li>
+          <li id="sinGenero"><a>Sin Genero</a></li>
+          <li id="desconocido"><a>Desconocido</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="container-aTodos"> <!-- contiene todo personajes, acciones, botones y mas -->
+      <div id="contenedor" class="contenedor">
+        <span class="loader"></span>
+      </div>
+      <p>Total de personajes: <span id="total-personajes"></span></p>
+      <div id="root" class="row esconder"></div>
+    </main>
+    
+    <!-- paginado -->
+    <div class="container-paginador">
+      <p>Pagina actual: <span id="pagina-actual"></span></p>
+      <p>Total de paginas: <span id="total-paginas"></span></p>
+    </div>
+
+    <div class="pagination">
+      <button
+        type="button"
+        id="primeraPagina"
+        class="primeraPagina pagination-button"
+        aria-label="Página previa"
+      >
+        <i class="fas fa-angle-double-left" aria-hidden="true"></i>
+      </button>
+      <button
+        type="button"
+        id="paginaAnterior"
+        class="paginaAnterior pagination-button"
+        aria-label="Página Anterior"
+      >
+        <i class="fas fa-angle-left" aria-hidden="true"></i>
+      </button>
+      <button
+        type="button"
+        id="proximaPagina"
+        class="proximaPagina pagination-button"
+        aria-label="Siguiente Página"
+      >
+        <i class="fas fa-angle-right" aria-hidden="true"></i>
+      </button>
+      <button type="button" id="ultimaPagina" class="ultimaPagina pagination-button" aria-label="Última página">
+        <i class="fas fa-angle-double-right" aria-hidden="true"></i>
+      </button>
+    </div>
+    <!-- pie de pagina -->
+    <footer>
+      <div class="footer-content">
+          <p>&copy; 2023 Prado Valeria</p>
+          <ul class="footer-links">
+              <li><a href="https://rickandmortysite.azurewebsites.net/">Sitio web oficial</a></li>
+              <li><a href="https://www.facebook.com/groups/167734531218939/">Facebook</a></li>
+              <li><a href="https://www.juegosdiarios.com/juegos/rick-and-morty-adventure-time.html">Juegos</a></li>
+          </ul>
+      </div>
+  </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
